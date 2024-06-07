@@ -1,7 +1,7 @@
 #!/bin/bash
 
 options=(
-  '--audio youtube'
+  '--audio youtube-music'
   '--lyrics musixmatch'
   '--generate-lrc'
 )
