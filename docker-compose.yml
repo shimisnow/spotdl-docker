@@ -10,6 +10,6 @@ services:
       - ./source/source.txt:/source/source.txt:ro
       - ./export:/export
     environment:
-      URLS_FILE_SOURCE: ${URLS_FILE_SOURCE}
-      OUTPUT_DIRECTORY: ${OUTPUT_DIRECTORY}
+      - URLS_FILE_SOURCE
+      - OUTPUT_DIRECTORY
     command: ./scripts/download.sh
