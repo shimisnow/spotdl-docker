@@ -1,10 +1,10 @@
 services:
   image:
     build: .
-    image: spotdl-sd-docker:latest
+    image: spotdl-sd-docker:v4.2.11
 
   download:
-    image: spotdl-sd-docker:latest
+    image: spotdl-sd-docker:v4.2.11
     volumes:
       - ./scripts:/scripts:ro
       - ./source/source.txt:/source/source.txt:ro
